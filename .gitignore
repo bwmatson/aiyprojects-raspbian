@@ -6,5 +6,10 @@ __pycache__
 Include
 Lib
 tcl
-scripts
+scripts/activate
+scripts/*.exe
+scripts/*.py
+scripts/*.bat
+scripts/*.ps1
+scripts/*.dll
 pip-selfcheck.json
