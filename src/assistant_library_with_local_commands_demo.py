@@ -92,7 +92,7 @@ def process_event(assistant, event):
 def main():
     credentials = aiy.assistant.auth_helpers.get_assistant_credentials()
     model_id, device_id = aiy.assistant.device_helpers.get_ids(credentials)
-    with Assistant(credentials, model_id) as assistant:
+    with Assistant(credentials) as assistant:
         for event in assistant.start():
             process_event(assistant, event)
 
